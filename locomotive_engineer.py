@@ -27,15 +27,3 @@ def extend_route_information(route, more_route_information):
 def fix_wagon_depot(wagons_rows):
     nowa_macierz = [[wagons_rows[j][i] for j in range(len(wagons_rows))] for i in range(len(wagons_rows[0]))]
     return nowa_macierz
-
-print(fix_wagon_depot([
-                    [(2, "red"), (4, "red"), (8, "red")],
-                    [(5, "blue"), (9, "blue"), (13,"blue")],
-                    [(3, "orange"), (7, "orange"), (11, "orange")],
-                    ]))
-
-# [
-# [(2, "red"), (5, "blue"), (3, "orange")],
-# [(4, "red"), (9, "blue"), (7, "orange")],
-# [(8, "red"), (13,"blue"), (11, "orange")]
-# ]
