@@ -1,3 +1,5 @@
+#Checking if word is an isogram
+
 def is_isogram(string):
     lower_case_string = string.lower().replace("-", "").replace(" ", "")
     result = "".join(dict.fromkeys(lower_case_string))
